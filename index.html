@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UPI Bank Prediction</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>UPI Bank Prediction</h1>
+    <form action="/" method="POST">
+        <div>
+            <label for="upi_bank">Select a UPI bank</label>
+            <select name="upi_bank" id="upi_bank">
+                {% for bank in upi_banks %}
+                <option value="{{ bank }}">{{ bank }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div>
+            <label for="volume_customers">Volume by Customers</label>
+            <input type="text" id="volume_customers" name="volume_customers">
+        </div>
+        <div>
+            <label for="volume">Volume (Mn)</label>
+            <input type="text" id="volume" name="volume">
+        </div>
+        <div>
+            <label for="value">Value (Cr)</label>
+            <input type="text" id="value" name="value">
+        </div>
+        <div>
+            <label for="month">Month</label>
+            <input type="text" id="month" name="month">
+        </div>
+        <div>
+            <label for="year">Year</label>
+            <input type="text" id="year" name="year">
+        </div>
+        <div>
+            <label for="total_volume">Total Volume (Mn)</label>
+            <input type="text" id="total_volume" name="total_volume">
+        </div>
+        <div>
+            <button type="submit">Predict</button>
+        </div>
+    </form>
+    
+    {% if prediction_text %}
+    <div id="prediction">
+        <h2>{{ prediction_text }}</h2>
+    </div>
+    {% endif %}
+</body>
+</html>
