@@ -12,6 +12,7 @@ Introducing "UPI Bank Prediction"! A powerful web app that uses machine learning
 
 5. Provides valuable insights for decision-making and strategic planning.
 
+
 ## Usage
 1. Run the Flask app: python app.py
 
