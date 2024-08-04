@@ -32,5 +32,3 @@ This project is licensed under the MIT License.
 The machine learning model used in this project is based on the Lasso algorithm.
 The dataset used for training and testing the model is available in the repository.
 
-![UPI_1](https://github.com/Anjureddyk/UPI_transaction_forecasting-Using_data_science_to_analyze_future_trends/assets/109125485/5e9bd057-e5de-43b2-85f4-d8686bbdb148)
-
