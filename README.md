@@ -13,15 +13,6 @@ Introducing "UPI Bank Prediction"! A powerful web app that uses machine learning
 5. Provides valuable insights for decision-making and strategic planning.
 
 
-## Usage
-1. Run the Flask app: python app.py
-
-2. Access the web interface at http://localhost:5000 in your browser.
-
-3. Enter the required information in the input fields.
-
-4. Click the "Predict" button to obtain the predicted total value.
-
 ## Contributing
 Contributions are welcome! If you have any suggestions, bug reports, or feature requests, please open an issue or submit a pull request.
 
